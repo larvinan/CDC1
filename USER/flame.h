@@ -11,3 +11,5 @@ void Flame_Init(void);
 uint8_t Flame_IsDetected(void); // ·µ»Ø1=ÓÐ»ðÑæ£¬0=ÎÞ»ðÑæ
 
 #endif
+
+

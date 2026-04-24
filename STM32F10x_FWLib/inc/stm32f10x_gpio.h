@@ -383,3 +383,5 @@ void GPIO_ETH_MediaInterfaceConfig(uint32_t GPIO_ETH_MediaInterface);
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

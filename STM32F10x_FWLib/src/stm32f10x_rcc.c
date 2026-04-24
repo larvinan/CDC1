@@ -1468,3 +1468,5 @@ void RCC_ClearITPendingBit(uint8_t RCC_IT)
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

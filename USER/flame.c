@@ -23,3 +23,5 @@ uint8_t Flame_IsDetected(void)
     // 火焰传感器特性：有火焰时DO输出低电平，无火焰时输出高电平
     return (GPIO_ReadInputDataBit(FLAME_GPIO_PORT, FLAME_GPIO_PIN) == 0) ? 1 : 0;
 }
+
+

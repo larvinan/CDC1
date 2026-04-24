@@ -1162,3 +1162,5 @@ void TIM_ClearITPendingBit(TIM_TypeDef* TIMx, uint16_t TIM_IT);
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

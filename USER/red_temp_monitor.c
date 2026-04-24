@@ -54,3 +54,5 @@ uint8_t IR_Detect_Person(void)
     }
     return 0; // 无遮挡，未检测到人员
 }
+
+

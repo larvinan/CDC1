@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "C:/Users/CJTH/VScode_path"
+		},
+		{
+			"name": "CDC1",
+			"path": "../../VScode/project/CDC1"
+		}
+	],
+	"settings": {
+		"ipynb.experimental.serialization": true,
+		"application.experimental.rendererProfiling": true,
+		"C_Cpp.autocompleteAddParentheses": true,
+		"css.format.spaceAroundSelectorSeparator": true,
+		"less.format.spaceAroundSelectorSeparator": true,
+		"cSpell.caseSensitive": true,
+		"cSpell.hideAddToDictionaryCodeActions": true,
+		"cSpell.showAutocompleteSuggestions": true
+	}
+}

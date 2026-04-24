@@ -29,3 +29,5 @@ uint16_t ADC_ReadAvg(ADC_Channel_t ch, uint8_t times);
 float ADC_ReadVoltageAvg(ADC_Channel_t ch, uint8_t times);
 
 #endif
+
+

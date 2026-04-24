@@ -85,3 +85,5 @@ float ADC_ReadVoltageAvg(ADC_Channel_t ch, uint8_t times)
 {
     return (float)ADC_ReadAvg(ch, times) / ADC_RESOLUTION * ADC_REF_VOLTAGE;
 }
+
+

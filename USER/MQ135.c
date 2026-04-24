@@ -142,3 +142,5 @@ float MQ135_Get_Air_Quality(void)
 
     return (ratio - 1.0f) * 11.1f;  // 1¡ú0£¬10¡ú100
 }
+
+

@@ -315,3 +315,5 @@ void DAC_ClearITPendingBit(uint32_t DAC_Channel, uint32_t DAC_IT);
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

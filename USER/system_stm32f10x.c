@@ -1092,3 +1092,5 @@ static void SetSysClockTo72(void)
   * @}
   */    
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

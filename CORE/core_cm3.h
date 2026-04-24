@@ -1816,3 +1816,5 @@ static __INLINE int ITM_CheckChar (void) {
 #endif /* __CM3_CORE_H__ */
 
 /*lint -restore */
+
+

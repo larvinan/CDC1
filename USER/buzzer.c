@@ -72,3 +72,5 @@ void Beep_Stop(void)
         GPIO_SetBits(BEEP_GPIO_PORT, BEEP_GPIO_PIN);
     }
 }
+
+

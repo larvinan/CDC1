@@ -336,27 +336,27 @@ uint8_t MQTT_Get_Data(char *name,char *data1,char *data2,char *data3,char *data4
 }
 */
 /**
- * @brief  接收 OneNET 下发的 0~5 指令，返回对应数字
- * @param  name: 标识符（比如 "RGB:"，用来匹配主题/指令前缀）
- * @retval 0~5: 对应指令数字，0xFF: 无匹配/错误
+ * @brief  ???? OneNET ?·??? 0~5 ?????????????
+ * @param  name: ??????????? "RGB:"?????????????/???????
+ * @retval 0~5: ???????????0xFF: ?????/????
  */
 uint8_t MQTT_Get_Data(char *name)
 {
-    uint8_t data = 0xFF;  // 默认返回0xFF，表示无有效指令
-
-    // 1. 判断是否收到了带标识符的数据
+    uint8_t data = 0xFF;  // ??????0xFF?????????Ч???
+    
+    // 1. ?ж?????????????????????
     if (strstr(USART2_RX_BUF, name) != NULL)
-    {
+    {		//printf("%d/n",12345);
         Serial_SendString(1, "成功接收到OneNET下发数据\r\n");
         Serial_SendString(2, USART2_RX_BUF);
+				
 
-        // 2. 提取标识符后面的数字（0~5）
+        // 2. ??????????????????0~5??
         char *p = strstr(USART2_RX_BUF, name);
         if (p != NULL)
         {
-            p += strlen(name);  // 跳过标识符，直接指向数字部分
+            p += strlen(name);  //  跳过标识符，直接指向数字部分
 
-            // 匹配0~5指令
             if (strstr(p, "0") != NULL) data = 0;
             else if (strstr(p, "1") != NULL) data = 1;
             else if (strstr(p, "2") != NULL) data = 2;
@@ -382,10 +382,12 @@ uint8_t ESP_WaitResp(char *wait_str,uint16_t timeout_ms)
 	{
 		if (strstr(USART2_RX_BUF,wait_str)!=NULL)
 		{
-			return 1;//查找成功
+			return 1;//??????
 		}
 		delay_ms(1);
 		start++;
 	}
-	return 0;//超时
+	return 0;//???
 }
+
+

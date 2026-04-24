@@ -267,3 +267,5 @@ void EXTI_ClearITPendingBit(uint32_t EXTI_Line)
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

@@ -24,3 +24,5 @@ unsigned int crc16(unsigned char *daBuf,unsigned char len)//ANSI CRC-16,x16 + x1
 
     return(nCRC);   /*return ((CRC>>8)+(CRC<<8)); 应用时可高在先 */
 }
+
+

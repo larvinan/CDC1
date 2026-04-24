@@ -1682,3 +1682,5 @@ FLASH_Status FLASH_WaitForLastBank2Operation(uint32_t Timeout)
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

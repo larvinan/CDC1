@@ -1305,3 +1305,5 @@ void ADC_ClearITPendingBit(ADC_TypeDef* ADCx, uint16_t ADC_IT)
   */
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
+

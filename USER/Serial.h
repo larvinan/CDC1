@@ -19,3 +19,5 @@ extern uint16_t USART2_RX_LEN;//接收数据的长度
 extern uint8_t USART2_RX_FINISH;
 
 #endif
+
+
