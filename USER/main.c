@@ -1,7 +1,19 @@
-/*
- * USER/main.c
- * 2026-04-25 注释精简版：仅保留关键初始化与主循环说明。
- */
+/*项目工作日志
+2026-4-15 20:30 Created by LWH
+2026-4-16 02:40 Updated by LWH 调试温湿度DHT11和烟雾传感器MQ135驱动代码 添加可移植ADC封装函数 
+OLED实时显示当前温湿度和气体浓度 超过设定阈值时触发文字警报
+2026-4-16 21:08 Updated by LWH 重新整理温湿度和气体检测模块代码 矫正烟雾阈值
+2026-4-17 18:02 Updated by LWH 添加蜂鸣器驱动 空气质量过低会出触发蜂鸣器警报
+2026-4-17 23:45 Updated by LWH 添加esp8266 usart1、2串口 onenet相关代码和驱动
+2026-4-19 02:07 UPdated by LWH 添加光敏传感器驱动封装(By LSY) 调试光照阈值 oled显示实时状态(bright/Dark)
+2026-4-19 04:54 Updated by LWH 添加火焰传感器驱动封装 将检测的火焰状态在oled上显示(1 SAFE/0 FIRE) 
+有火焰时触发蜂鸣器警报
+2026-4-19 21:30 Updated by LWH 添加MQTT相关代码 添加MQTT发布数据到云端 发送当前传感器数据到云端onenet 平台
+2026-4-20 23:15 Updated by LWH 添加RGB驱动封装模拟教室灯光 添加MQTT订阅云端RGB控制命令 根据命令切换RGB状态(关闭/白/红/绿/蓝/彩虹动画)
+2026-4-21 02:30 Updated by LWH 整理主循环代码结构 优化显示逻辑和MQTT交互逻辑
+2026-4-24 20:00 Updated by LWH 添加注释说明代码逻辑和功能 上传源码到GitHub
+2026-4-25 04:05 Updated by LWH 导入工程文件到vscode进行调试 编译和stlink下载
+*/
 
 #include "delay.h"
 #include "sys.h"
