@@ -36,6 +36,8 @@ virtualFolder:
         - path: USER/bsp_rgb.c
         - path: USER/red_temp_monitor.c
         - path: USER/red_temp_monitor.h
+        - path: USER/sensor_led.h
+        - path: USER/sensor_led.c
       folders: []
     - name: SYSTEM
       files:
